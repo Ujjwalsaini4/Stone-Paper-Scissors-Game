@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>stone-paper-scissor-game</title>
+</head>
+
+<body>
+  <section>
+    <div class="title">
+      <h1>Stone Paper Scissor Game</h1>
+    </div>
+    <div class="icon-container">
+      <div class="icon" id="stone"><img src="images/rock.png" alt=""></div>
+      <div class="icon" id="paper"><img src="images/paper.png" alt=""></div>
+      <div class="icon" id="scissors"><img src="images/scissors.png" alt=""></div>
+    </div>
+
+    <div class="score-container">
+      <div class="scores">
+        <h1 id="userName">You Win:</h1>
+        <h1 id="user">0</h1>
+      </div>
+      <div class="scores">
+        <h1>Computer Win:</h1>
+        <h1 id="computer">0</h1>
+      </div>
+      <div class="scores">
+        <h1>Draw:</h1>
+        <h1 id="drow">0</h1>
+      </div>
+    </div>
+
+    <div class="score-container">
+      <div class="options">
+        <h1>Your Choice :</h1>
+        <h1 id="userOption"></h1>
+      </div>
+      <div class="options">
+        <h1>Computer Choice :</h1>
+        <h1 id="compOption"></h1>
+      </div>
+    </div>
+
+    <div class="video-background">
+      <div class="winVideo">
+        <video id="win" autoplay muted playsinline>
+          <source src="videos/ezgif-653afd574f136d.mp4" type="video/mp4">
+        </video>
+        <audio id="winAudio" src="sound/Voicy_Confetti Pop With Yay Sound .mp3"></audio>
+      </div>
+
+      <div class="loseVideo">
+        <video id="lose" muted playsinline>
+          <source src="videos/ezgif-3a9fd3165cdbb1.mp4" type="video/mp4">
+        </video>
+        <audio id="loseAudio" src="sound/mixkit-retro-arcade-game-over-470.wav"></audio>
+      </div>
+
+      <div>
+        <audio id="drawAudio" src="sound/windows-xp-error-changed-a-bit.mp3"></audio>
+      </div>
+    </div>
+
+    <audio class="tap-audio" src="sound/tapping-screen-tap-button-tap-sound-effect-238446512_nw_prev.mp3"></audio>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
