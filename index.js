@@ -39,7 +39,7 @@ function loseGame() {
   loseAudio.currentTime = 0;
   loseAudio.play();
   loseAudio.volume = 0.3;
-  document.querySelector(".loseVideo").style.display = "block";
+  document.querySelector(".loseVideo").style.display = "flex";
   document.querySelector("#lose").play();
 }
 

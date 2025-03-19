@@ -16,6 +16,7 @@
   justify-content: center;
   align-items: center;
   height: 80px;
+
   background-color: var(--title-background);
 }
 
@@ -28,6 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 100px;
 }
 
@@ -54,14 +56,17 @@
 }
 
 .score-container {
+  font-size: 1rem;
   margin-top: 50px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 5rem;
 }
 
 .scores {
   display: flex;
+  row-gap: 10px;
 }
 
 .winVideo {
@@ -102,5 +107,71 @@ audio {
 
 .loseVideo {
   display: none;
-  margin-left: 75rem;
+  width: 100vw;
+  justify-content: flex-end;
+}
+
+
+
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 1rem;
+  }
+
+  .icon-container {
+    margin-top: 50px;
+    gap: 20px;
+  }
+
+  .icon img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .icon {
+    height: 160px;
+    width: 160px;
+  }
+
+  .score-container {
+    font-size: 11px;
+    gap: 1rem;
+  }
+
+  .winVideo video {
+    height: 200px;
+    width: 200px;
+  }
+
+  .loseVideo video {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 376px){
+
+  .icon-container{
+    margin-top: 30px;
+  }
+
+  .title{
+    height: 50px;
+  }
+  
+  .icon img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .icon {
+    height: 130px;
+    width: 130px;
+  }
+
+  .score-container {
+    margin-top: 40px;
+    font-size: 10px;
+    gap: 1rem;
+  }
 }
